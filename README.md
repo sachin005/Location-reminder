@@ -15,4 +15,4 @@ Features:
 - Using the location points recorded, user can see the path he has taken from his car's location to get to where he is. User can walk back on the same path for getting back to the car. This path is drawn as a line connecting different location points recorded. To connect these points, Polylines are used which is part of the Google Maps API.
 
 
-This app has not been modified to be deployed and therefore has debug key
+If you wish to try running this app, you'll have to add your own api key in the manifest file line# 27.
