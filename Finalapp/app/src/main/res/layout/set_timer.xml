@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/primary_material_light"
+    android:id="@+id/rel">
+
+    <NumberPicker
+        android:id="@+id/picker_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp" />
+
+    <NumberPicker
+        android:id="@+id/picker_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="89dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp" />
+
+
+    <TextView
+        android:id="@+id/tv_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:text="Minutes"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/picker_minutes"
+        android:layout_alignEnd="@+id/picker_minutes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:text="Hours"
+        android:id="@+id/textView"
+        android:layout_below="@+id/tv_minutes"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="30dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/timer_cancel"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/picker_hours" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/timer_ok"
+        android:layout_alignTop="@+id/timer_cancel"
+        android:layout_alignEnd="@+id/tv_minutes" />
+
+
+</RelativeLayout>

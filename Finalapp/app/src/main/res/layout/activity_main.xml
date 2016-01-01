@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pin"
+            android:id="@+id/pin"
+            android:onClick="onClick_Pin"
+            android:layout_weight="1"
+            android:layout_gravity="top" />
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Unpin"
+            android:onClick="onClick_Unpin"
+            android:id="@+id/unpin"
+            android:layout_weight="1"
+            android:layout_gravity="top" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Note"
+            android:onClick="onClick_note"
+            android:id="@+id/note" />
+    </LinearLayout>
+
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="407dp"
+        android:id="@+id/fragment"
+        android:layout_width="fill_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        android:onClick="onClick_Navigate"
+        android:src="@drawable/btn_navi"
+        android:contentDescription="@string/Navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/fragment" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_car"
+        android:layout_above="@+id/navigation"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/btn_maps_car"
+        android:onClick="onClick_MyCar"/>
+
+
+</RelativeLayout>

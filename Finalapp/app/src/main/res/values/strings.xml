@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Final app</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Pin">Pin</string>
+    <string name="Unpin">Unpin</string>
+    <string name="Note">Note</string>
+    <string name="Navigation">Navigation</string>
+    <string name="addnote">Add a note:</string>
+    <string name="poly">Show my path</string>
+    <string name="set_time">Set Timer</string>
+</resources>

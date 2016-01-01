@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/set_time"
+        android:onClick="onClick_SetTimer"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/polylinemenu"
+        android:title="@string/poly"
+        android:onClick="onClick_DrawPath"/>
+    <item android:id="@+id/show_note"
+        android:title="Show note"
+        android:onClick="onClick_ShowNote"/>
+
+</menu>

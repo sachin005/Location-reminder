@@ -1,0 +1,36 @@
+******Ride Finder******
+An app to remember location of your car.
+
+Pin button: Clicking it will pin users current location on the map. It is shown using a marker. On clicking this marker, a snippet appears in which you can see the time when the car was parked.
+
+Unpin button: Unpins the location from the map.
+
+Add Note button: Opens a popup window where you can add text describing the place where you parked. Ex. 1st floor of parking lot.
+
+
+Options menu:
+1. Show my path: This draws a polyline along the path you took when you walked from your car to your current position. (There must be at least two locations recorded in order to draw a polyline).
+
+2. Show Note: Displays the note as toast message if a note was added.
+
+3. Set Timer: Allows you to set a timer after which the app will notify to get your car out of the parking space so that you don't get a ticket.
+
+
+ImageButtons:
+1. Navigate (Blue arrow): Opens the default navigation app for Android and provides walking directions to the spot where the car is.
+
+2. My car: Zooms on to the location of car on the map.
+
+
+My Location: It shows current location of the user represented by a blue dot on the map.
+
+
+Extra features:
+
+Timer: Allows user to set a reminder for parking time restrictions using the option "Set timer" in options menu. This opens up a popup window showing two number pickers to set hours and minutes.
+
+The app uses AlarmManager to set an alarm which will get back to the app using BroadcastReceiver when the set time is reached.
+
+It also uses NotificationManager to display a notification in the notification area to notify user about the reminder she had set. The notification is accompanied with default sound and default vibration of the phone. On clicking the notification, the user will be directed to the MainActivity of the app.
+
+PendingIntent was used in both AlarmManager and NotificationManager to correctly display activities as required.
