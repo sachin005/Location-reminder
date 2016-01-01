@@ -24,7 +24,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDJ-pUt2qRp0sf10465SBY3thD8zmfO7nk"/>
+            android:value="YOUR_API_KEY"/>
 
         <receiver android:name=".AlarmManagerReceiver"/>
 
